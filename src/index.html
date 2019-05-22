@@ -1,0 +1,36 @@
+<header class="sec desc">
+    <span class="content">
+        <span>Task Manager</span>
+        <a href="#" data-api-modal="users"></a>
+    </span>
+</header>
+<div class="card card-red">
+    <div class="table-responsive">
+        <table class="table table-hover" id="task-manager-table">
+            <thead>
+                <tr>
+                    <th class="header"></th>
+                    <th class="header">User</th>
+                    <th class="header">PID</th>
+                    <th class="header">TTY</th>
+                    <th class="header">CPU</th>
+                    <th class="header">Memory</th>
+                    <th class="header">Time</th>
+                    <th class="header">Command</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</div>
+
+<script type="text/javascript">
+    airscarp.ready(function(){
+        
+        // Show table
+        tasks.get_data(function(data){ tasks.show_table(data) });
+    
+        // Listener
+        tasks.listener.close();
+    });
+</script>

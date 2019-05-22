@@ -1,0 +1,7 @@
+.task-manager-command-col{
+    wwhite-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 500px;
+    display: inline-block;
+}
