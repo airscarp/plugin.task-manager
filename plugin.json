@@ -1,8 +1,7 @@
 {
-    "version"     : "1.0.0",
     "name"        : "Task Manager",
     "menu"        : "Task Manager",
-    "alias"       : "task-manager",
+    "description" : "Task Manager",
     "os"          : ["ubuntu", "centos", "rhel", "debian", "cloudlinux", "fedora"],
     "permissions" : ["shell.exec", "task-manager.list", "task-manager.close"]
 }
